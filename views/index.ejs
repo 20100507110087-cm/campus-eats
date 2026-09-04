@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
- <%- include('partials/header') %>
+  <%- include('partials/header') %>
 
 <section class="hero">
   <span class="eyebrow">Multi-restaurant ordering</span>
@@ -17,8 +17,8 @@
 
 <section class="restaurants">
   <h2>Popular Restaurants</h2>
-  <div class="restaurant-grid"
-      <% restaurants.forEach(r => { %>
+  <div class="restaurant-grid">
+    <% restaurants.forEach(r => { %>
       <div class="restaurant-card">
         <div class="avatar"><%= r.name.charAt(0) %></div>
         <h3><%= r.name %></h3>
@@ -32,17 +32,6 @@
 
 <%- include('partials/footer') %>
 
-
-
-
-
-<section class="hero">
-  <span class="eyebrow">Multi-restaurant ordering</span>
-  <h1>Welcome to Campus Eats</h1>
-  <p>Order from multiple restaurants, all in one place.</p>
-</section>
-
-<%- include('partials/footer') %>
 
 </body>
 </html>
